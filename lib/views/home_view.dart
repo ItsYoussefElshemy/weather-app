@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: const Text(
-          'Weather',
+          "Weather",
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
         actions: [
@@ -33,3 +33,6 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
+
+\\ comment
