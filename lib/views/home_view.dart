@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather/views/search_view.dart';
+import 'package:weather/widgets/noWeather_body.dart';
+import 'package:weather/widgets/weather_info_body.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -10,7 +12,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: const Text(
-          "Weather",
+          'Weather',
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
         actions: [
@@ -30,10 +32,9 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
+      body: weatherModel == null
+          ? const NoWeatherBody()
+          : const WeatherInfoBody(),
     );
   }
 }
-
-
-
-///new
