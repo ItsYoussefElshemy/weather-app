@@ -1,7 +1,7 @@
 import 'dart:developer';
 import 'package:dio/dio.dart';
 import 'package:weather/models/weather_model.dart';
-import 'package:weather/views/search_view.dart';
+
 
 class WeatherService {
   final Dio dio;
