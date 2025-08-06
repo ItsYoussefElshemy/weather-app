@@ -41,10 +41,10 @@ class HomePage extends StatelessWidget {
             return const NoWeatherBody();
           } else if (state is WeatherLoadedState) {
             return WeatherInfoBody(
-              weatherModel: state.weatherModel ,
-              );
+              weather: state.weatherModel,
+            );
           } else {
-            return const Text('there was an error');
+            return const Text('Opps there was an error');
           }
         },
       ),

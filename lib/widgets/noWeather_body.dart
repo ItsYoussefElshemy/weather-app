@@ -1,14 +1,3 @@
-/* import 'package:flutter/material.dart';
-
-class NoweatherBody extends StatelessWidget {
-  const NoweatherBody({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-*/
 
 import 'package:flutter/material.dart';
 
@@ -28,13 +17,13 @@ class NoWeatherBody extends StatelessWidget {
             Text(
               'there is no weather 😔 start',
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 26,
               ),
             ),
             Text(
               'searching now 🔍',
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 26,
               ),
             )
           ],
